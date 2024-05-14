@@ -6,6 +6,12 @@
     <title>Catálogo de Produtos</title>
     <style>
         /* Estilos aqui */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
         .header {
             text-align: center;
             padding: 20px 0;
@@ -18,6 +24,7 @@
         .container {
             max-width: 800px;
             margin: 0 auto;
+            padding: 0 20px;
         }
 
         .product-card {
@@ -106,9 +113,9 @@
                 <button onclick="addToCart('Chorizo Cara Preta', 99.90)">Adicionar ao Carrinho</button>
             </div>
             <div class="quantity-controls">
-                <button onclick="decreaseQuantity('chorizo')">-</button>
-                <span id="chorizo-quantity">1</span>
-                <button onclick="increaseQuantity('chorizo')">+</button>
+                <button onclick="decreaseQuantity('Chorizo Cara Preta')">-</button>
+                <span id="Chorizo-Cara-Preta-quantity">1</span>
+                <button onclick="increaseQuantity('Chorizo Cara Preta')">+</button>
             </div>
         </div>
         <!-- Adicione mais produtos aqui -->
@@ -138,9 +145,9 @@
                 <button onclick="addToCart('Salame Italiano', 12.90)">Adicionar ao Carrinho</button>
             </div>
             <div class="quantity-controls">
-                <button onclick="decreaseQuantity('Salame')">-</button>
-                <span id="Salame-quantity">1</span>
-                <button onclick="increaseQuantity('Salame')">+</button>
+                <button onclick="decreaseQuantity('Salame Italiano')">-</button>
+                <span id="Salame-Italiano-quantity">1</span>
+                <button onclick="increaseQuantity('Salame Italiano')">+</button>
             </div>
         </div>
         <!-- Adicione mais produtos aqui -->
@@ -154,9 +161,9 @@
                 <button onclick="addToCart('Vinho Tinto', 35.90)">Adicionar ao Carrinho</button>
             </div>
             <div class="quantity-controls">
-                <button onclick="decreaseQuantity('Vinho')">-</button>
-                <span id="Vinho-quantity">1</span>
-                <button onclick="increaseQuantity('Vinho')">+</button>
+                <button onclick="decreaseQuantity('Vinho Tinto')">-</button>
+                <span id="Vinho-Tinto-quantity">1</span>
+                <button onclick="increaseQuantity('Vinho Tinto')">+</button>
             </div>
         </div>
         <!-- Adicione mais produtos aqui -->
@@ -170,6 +177,4 @@
                 <button onclick="addToCart('Farofa de Mandioca', 9.90)">Adicionar ao Carrinho</button>
             </div>
             <div class="quantity-controls">
-                <button onclick="decreaseQuantity('Farofa')">-</button>
-                <span id="Farofa-quantity">1</span>
-                <button onclick="increaseQuantity('Farofa
+                <button onclick="decreaseQuantity('Farofa de Mandioca')">
