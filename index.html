@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        .header {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .header img {
+            max-width: 100%;
+            height: auto;
+        }
+        .container {
+            width: 90%;
+            margin: 20px auto;
+        }
+        .container h2 {
+            margin-top: 20px;
+            color: #333;
+        }
+        .product-card {
+            display: flex;
+            align-items: center;
+            background: #fff;
+            margin: 10px 0;
+            padding: 10px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .product-card img {
+            max-width: 100px;
+            border-radius: 10px;
+            margin-right: 20px;
+        }
+        .product-info {
+            flex-grow: 1;
+        }
+        .product-info h2 {
+            margin: 0;
+            color: #333;
+            font-size: 1.2em;
+        }
+        .product-info p {
+            color: #666;
+            margin: 5px 0;
+        }
+        .product-price {
+            color: #e74c3c;
+            font-size: 1.1em;
+            font-weight: bold;
+        }
+        .quantity-controls {
+            display: flex;
+            align-items: center;
+        }
+        .quantity-controls button {
+            background-color: #eee;
+            border: 1px solid #ccc;
+            padding: 5px 10px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 0 5px;
+        }
+        .show-order-button {
+            display: block;
+            width: 100%;
+            text-align: center;
+            padding: 15px;
+            background-color: #28a745;
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <img src="logo.png" alt="Nobraseiro Carnes Nobres">
+        <h1>Catálogo</h1>
+    </div>
+    <div class="container">
+        <h2>Chorizos</h2>
+        <div class="product-card">
+            <img src="chorizo1.jpg" alt="Chorizo Cara Preta">
+            <div class="product-info">
+                <h2>Chorizo Cara Preta</h2>
+                <p>Não vendemos por kg e sim por unidade</p>
+                <div class="product-price">R$ 99,90</div>
+            </div>
+            <div class="quantity-controls">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+        <!-- Adicione mais produtos de Chorizo aqui -->
+    </div>
+    <div class="container">
+        <h2>Ancho</h2>
+        <div class="product-card">
+            <img src="ancho1.jpg" alt="Ancho Estância 92">
+            <div class="product-info">
+                <h2>Ancho Estância 92</h2>
+                <p>Preço da unidade / Não vendemos por kg</p>
+                <div class="product-price">R$ 59,90</div>
+            </div>
+            <div class="quantity-controls">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+        <!-- Adicione mais produtos de Ancho aqui -->
+    </div>
+    <div class="container">
+        <h2>Brisket</h2>
+        <div class="product-card">
+            <img src="brisket1.jpg" alt="Brisket">
+            <div class="product-info">
+                <h2>Brisket</h2>
+                <p>Preço da Unidade / Não vendemos por kg</p>
+                <div class="product-price">R$ 79,90</div>
+            </div>
+            <div class="quantity-controls">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+        <!-- Adicione mais produtos de Brisket aqui -->
+    </div>
+    <div class="container">
+        <h2>Costelinhas</h2>
+        <div class="product-card">
+            <img src="costelinha1.jpg" alt="Costelinha Suína Barbecue">
+            <div class="product-info">
+                <h2>Costelinha Suína Barbecue</h2>
+                <p>Preço da Unidade / Não vendemos por kg</p>
+                <div class="product-price">R$ 49,90</div>
+            </div>
+            <div class="quantity-controls">
+                <button>-</button>
+                <span>1</span>
+                <button>+</button>
+            </div>
+        </div>
+        <!-- Adicione mais produtos de Costelinha aqui -->
+    </div>
+    <a href="mostrar-pedido.html" class="show-order-button">Mostrar pedido (3)</a>
+</body>
+</html>
